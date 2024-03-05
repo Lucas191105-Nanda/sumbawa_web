@@ -285,6 +285,10 @@ footer .bottom div {
     font-size: 50%;
   }
 
+  .navbar .navbar-brand img {
+    width: 100% !important;
+  }
+
   .heading-title span {
     font-size: 2.5rem;
   }
