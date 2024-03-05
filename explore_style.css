@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --main-color: #287739;
+  --lg-green: #A5DD9B;
+  --white: #fff;
+  --grey: #f0f0f0;
+  --black: #000;
+  --lg-black: #272829;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  background-color: var(--white);
+  width: 100%;
+}
+
+.navbar .navbar-brand img{
+  width: 65%;
+  transition: ease 0.5s;
+}
+
+.navbar .navbar-brand img.shrink{
+  width: 50%;
+  transition: ease 0.5s;
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+  color: var(--black);
+  transition: 0.2s ease;
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+  color: var(--white);
+  background: var(--main-color);
+}
+
+.heading-title {
+  text-align: center;
+  margin-top: 14rem;
+}
+
+.heading-title span {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: var(--lg-green);
+  color: var(--main-color);
+  border-radius: 25%;
+  padding: .2rem 1rem;
+  display: inline-block;
+}
+
+.card-container {
+  background: var(--grey);
+  padding: 3rem 6rem;
+}
+
+.card-container a{
+  text-decoration: none;
+}
+
+.card-body .review i {
+  font-size: 1.5rem;
+  color: #ffa800;
+}
+
+.card-title {
+  font-size: 1.6rem;
+}
+
+.card-text {
+  text-align: justify;
+  text-transform: none !important;
+}
+
+.load-more {
+  text-align: center;
+  width: 100%;
+  background: var(--grey);
+}
+
+.load-more .btn1,
+.btn2 {
+  color: white;
+  padding: 0.8rem 1.5rem;
+  background: var(--main-color) !important;
+  font-size: 1.5rem;
+  border-radius: .8rem;
+  cursor: pointer;
+}
+
+.load-more .btn1:hover,
+.btn2:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+/* Footer section starts */
+footer .row {
+  height: fit-content;
+  color: white;
+  text-align: center;
+}
+
+footer .row:nth-child(1) {
+  padding: 60px 0px 30px;
+}
+
+footer .row img {
+  width: 50%;
+}
+
+footer .row .mid {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+footer .row .mid ul li {
+  padding: 5px 20px;
+}
+
+footer .row .mid ul li a{
+  text-decoration: none;
+}
+
+footer .row .mid ul .li-head {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+footer .row .left {
+  border-radius: 10px;
+}
+
+footer .row .left iframe {
+  width: 420px;
+  height: 280px;
+}
+
+footer .contact-us {
+  height: 100px;
+  font-size: 30px;
+}
+
+footer .contact-us div {
+  width: fit-content;
+}
+
+footer .contact-us div i {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+footer .bottom div {
+  width: 90%;
+  border-top: 3px solid white;
+  padding: 10px 0px 0px;
+}
+/* Footer section ends */
+
+
+/* Media Query */
+
+/* Laptop */
+@media (max-width: 3000px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 55%;
+  }
+  .card-container {
+    background: var(--grey);
+    padding: 3rem 3rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar {
+    padding-bottom: 0;
+  }
+
+  .heading-title span {
+    font-size: 2.8rem;
+  }
+
+  .navbar .nav-item {
+    padding: 1rem;
+  }
+
+  .navbar .nav-item .nav-links {
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .card-container {
+    padding: 1rem 10rem;
+  }
+
+  .heading-title {
+    margin-top: 10rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+  
+  .navbar .navbar-brand img {
+    width: 100% !important;
+  }
+
+  .heading-title {
+    margin-top: 10rem;
+  }
+
+  .heading-title span {
+    font-size: 1.8rem;
+  }
+
+  .card-container {
+    padding: 1rem 7rem;
+  }
+
+  .footer li {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 280px) {
+  html {
+    font-size: 40%;
+  }
+
+  .heading-title span {
+    font-size: 1.3rem;
+  }
+}
